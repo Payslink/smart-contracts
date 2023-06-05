@@ -1,0 +1,18 @@
+{
+  "scripts": {
+    "merge-token-contract": "sol-merger \"./contracts/Pays.sol\" merged-contracts",
+    "compile": "truffle compile",
+    "deploy-token-testnet": "truffle migrate --network bscTestnet -f 1 --to 1",
+    "deploy-token-mainnet": "truffle migrate --network bscMainnet -f 1 --to 1"
+  },
+  "devDependencies": {
+    "@truffle/hdwallet-provider": "^2.0.8",
+    "dotenv": "^16.0.1",
+    "sol-merger": "^4.1.1",
+    "truffle": "^5.5.14",
+    "truffle-contract-size": "^2.0.1"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "4.6.0"
+  }
+}
